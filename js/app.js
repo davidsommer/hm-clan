@@ -35,7 +35,7 @@ const renderFooter = () => {
   mount.innerHTML = `
     <footer class="site-footer">
       <div class="container footer-grid">
-        <a class="footer-logo" href="index.html" aria-label="hm-clan Home"><img src="img/hm-logo-transparent.png" alt="hm-clan Logo"></a>
+        <a class="footer-logo" href="index.html" aria-label="hm-clan Home"><img src="img/hm-logo-transparent.png" alt="hm-clan Logo" width="800" height="368" loading="lazy" decoding="async"></a>
         <nav aria-label="Footer Navigation">${siteNav.filter(([label]) => label !== 'Home').map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}</nav>
         <div class="footer-socials" aria-label="Social Links">
           <a class="social-link social-facebook" href="https://www.facebook.com/hmclan" target="_blank" rel="noopener" aria-label="hm-clan auf Facebook">${icons.facebook}</a>
