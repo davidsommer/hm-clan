@@ -1,8 +1,11 @@
+const root = document.body.dataset.root || '';
+const home = root || './';
+
 const siteNav = [
-  ['Home', 'index.html'],
-  ['Geschichte', 'geschichte.html'],
-  ['Konzerte', 'konzerte.html'],
-  ['Videos', 'videos.html'],
+  ['Home', home],
+  ['Geschichte', root + 'geschichte/'],
+  ['Konzerte', root + 'konzerte/'],
+  ['Videos', root + 'videos/'],
 ];
 
 const icons = {
@@ -17,7 +20,7 @@ const renderHeader = () => {
 
   mount.innerHTML = `
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="hm-clan Home">
+      <a class="brand" href="${home}" aria-label="hm-clan Home">
         <span class="brand-mark"><span class="brand-name">hm-clan</span><span class="brand-tag">history makers</span></span>
       </a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
@@ -35,7 +38,7 @@ const renderFooter = () => {
   mount.innerHTML = `
     <footer class="site-footer">
       <div class="container footer-grid">
-        <a class="footer-logo" href="index.html" aria-label="hm-clan Home"><img src="img/hm-logo-transparent.png" alt="hm-clan Logo" width="800" height="368" loading="lazy" decoding="async"></a>
+        <a class="footer-logo" href="${home}" aria-label="hm-clan Home"><img src="${root}img/hm-logo-transparent.png" alt="hm-clan Logo" width="800" height="368" loading="lazy" decoding="async"></a>
         <nav aria-label="Footer Navigation">${siteNav.filter(([label]) => label !== 'Home').map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}</nav>
         <div class="footer-socials" aria-label="Social Links">
           <a class="social-link social-facebook" href="https://www.facebook.com/hmclan" target="_blank" rel="noopener" aria-label="hm-clan auf Facebook">${icons.facebook}</a>
@@ -69,9 +72,13 @@ if (navToggle && mainNav) {
   });
 }
 
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const knownSlugs = ['geschichte', 'konzerte', 'videos'];
+const lastSegment = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/+$/, '').split('/').pop();
+const currentSlug = knownSlugs.includes(lastSegment) ? lastSegment : '';
 document.querySelectorAll('.main-nav a').forEach((link) => {
-  if (link.getAttribute('href') === currentPage) {
+  const match = link.getAttribute('href').match(/(geschichte|konzerte|videos)\/?$/);
+  const linkSlug = match ? match[1] : '';
+  if (linkSlug === currentSlug) {
     link.classList.add('is-active');
   }
 });
