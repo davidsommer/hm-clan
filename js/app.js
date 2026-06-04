@@ -105,6 +105,43 @@ if ('IntersectionObserver' in window) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
+const animateCount = (el) => {
+  const target = parseInt(el.dataset.count, 10);
+  if (Number.isNaN(target)) return;
+  const suffix = el.dataset.suffix || '';
+  const duration = 1400;
+  let startTime = null;
+  const step = (now) => {
+    if (startTime === null) startTime = now;
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(eased * target) + suffix;
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    } else {
+      el.textContent = target + suffix;
+    }
+  };
+  requestAnimationFrame(step);
+};
+
+const counters = document.querySelectorAll('[data-count]');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (counters.length && 'IntersectionObserver' in window && !reduceMotion) {
+  counters.forEach((el) => {
+    el.textContent = `0${el.dataset.suffix || ''}`;
+  });
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        countObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+  counters.forEach((el) => countObserver.observe(el));
+}
+
 const lightbox = document.getElementById('lightbox');
 if (lightbox) {
   const lightboxImage = lightbox.querySelector('img');
