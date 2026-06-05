@@ -247,7 +247,7 @@ if (concertMediaIndex.length || initialConcertMedia.length) {
       <div class="concert-photo-grid">
         ${eventData.photos.map((photo, index) => `
           <button class="concert-photo-thumb" type="button" data-photo-index="${index}">
-            <img src="${photo.src}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async">
+            <img src="${photo.thumb || photo.src}" alt="${photo.alt}" width="${photo.thumbWidth || photo.width}" height="${photo.thumbHeight || photo.height}" loading="lazy" decoding="async">
           </button>
         `).join('')}
       </div>
@@ -308,6 +308,7 @@ if (concertMediaIndex.length || initialConcertMedia.length) {
     }
 
     if (actions.children.length) target.appendChild(actions);
+    if (actions.children.length) item.classList.add('has-media');
   };
 
   const attachYearMedia = (events) => {

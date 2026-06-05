@@ -9,85 +9,127 @@ window.hmConcertMediaYears["2007"] = [
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-24_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 1",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-24_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-3_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 2",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-3_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-2_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 3",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-2_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-8_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 4",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-8_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-11_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 5",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-11_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-12_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 6",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-12_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-14_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 7",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-14_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-15_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 8",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-15_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-17_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 9",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-17_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-28_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 10",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-28_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-29_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 11",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-29_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-30_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 12",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-30_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-38_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 13",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-38_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-42_1.jpg",
         "alt": "Beat Ministry e9 Basel (Säschu, face2face) Foto 14",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-beat-ministry-e9-basel-saeschu-face2face/07-beat-ministry-e9-basel-42_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       }
     ],
     "videos": []
@@ -101,199 +143,298 @@ window.hmConcertMediaYears["2007"] = [
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-60_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 1",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-60_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-1_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 2",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-1_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-6_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 3",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-6_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-8_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 4",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-8_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-9_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 5",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-9_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-13_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 6",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-13_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-15_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 7",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-15_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-16_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 8",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-16_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-21_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 9",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-21_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-31_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 10",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-31_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-46_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 11",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-46_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-49_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 12",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-49_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-54_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 13",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-54_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-56_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 14",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-56_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-57_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 15",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-57_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-66_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 16",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-66_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-69_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 17",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-69_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-71_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 18",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-71_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-73_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 19",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-73_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-75_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 20",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-75_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-83_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 21",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-83_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-84_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 22",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-84_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-85_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 23",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-85_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-90_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 24",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-90_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-91_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 25",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-91_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-94_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 26",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-94_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-98_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 27",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-98_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-102_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 28",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-102_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-103_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 29",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-103_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-109_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 30",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-109_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-112_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 31",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-112_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-116_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 32",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-116_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-119_1.jpg",
         "alt": "Release Party [drüeis] Wasserwerk Bern (Dave, dSmoke, Säschu, chéjs, face2face, Sarah / Nicä, Band Foto 33",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-release-party-drueeis-wasserwerk-bern-dave-dsmoke-saeschu-chej/07-release-party-wasserwerk-be-119_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       }
     ],
     "videos": [
@@ -363,25 +504,37 @@ window.hmConcertMediaYears["2007"] = [
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-1_1.jpg",
         "alt": "hh JAM Graffitti (dSmoke) Foto 1",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-1_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-2_1.jpg",
         "alt": "hh JAM Graffitti (dSmoke) Foto 2",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-2_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-3_1.jpg",
         "alt": "hh JAM Graffitti (dSmoke) Foto 3",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-3_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       },
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-4_1.jpg",
         "alt": "hh JAM Graffitti (dSmoke) Foto 4",
         "width": 800,
-        "height": 536
+        "height": 536,
+        "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-4_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 281
       }
     ],
     "videos": []
@@ -408,79 +561,118 @@ window.hmConcertMediaYears["2007"] = [
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-18_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 1",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-18_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-1_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 2",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-1_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-3_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 3",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-3_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-8_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 4",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-8_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-11_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 5",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-11_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-13_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 6",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-13_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-23_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 7",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-23_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-25_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 8",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-25_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-27_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 9",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-27_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-30_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 10",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-30_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-34_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 11",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-34_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-36_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 12",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-36_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-graceland-olten-chejs/07-graceland-olten-38_1.jpg",
         "alt": "Graceland Olten (chéjs) Foto 13",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-graceland-olten-chejs/07-graceland-olten-38_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       }
     ],
     "videos": [
@@ -505,103 +697,154 @@ window.hmConcertMediaYears["2007"] = [
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-55_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 1",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-55_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-13_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 2",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-13_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-14_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 3",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-14_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-18_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 4",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-18_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-21_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 5",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-21_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-22_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 6",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-22_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-31_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 7",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-31_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-32_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 8",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-32_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-37_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 9",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-37_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-48_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 10",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-48_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-49_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 11",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-49_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-50_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 12",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-50_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-53_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 13",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-53_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-57_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 14",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-57_1.jpg",
+        "thumbWidth": 420,
+        "thumbHeight": 315
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-61_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 15",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-61_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-62_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 16",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-62_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       },
       {
         "src": "../img/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-78_1.jpg",
         "alt": "Jugendtreff OneWay Adelboden (chéjs, Nick, Björn, Säschu) Foto 17",
         "width": 600,
-        "height": 800
+        "height": 800,
+        "thumb": "../img/thumbs/2007-jugendtreff-oneway-adelboden-chejs-nick-bjoern-saeschu/07-jugendtreff-oneway-adelboden-78_1.jpg",
+        "thumbWidth": 240,
+        "thumbHeight": 320
       }
     ],
     "videos": [

@@ -1,7 +1,5 @@
-# www.robotstxt.org/
-
-# Allow crawling of all content
-User-agent: *
+﻿User-agent: *
 Disallow:
 
 Sitemap: https://www.hm-clan.ch/sitemap.xml
+

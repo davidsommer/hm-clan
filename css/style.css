@@ -57,6 +57,18 @@ a {
   color: inherit;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(214, 167, 47, 0.9);
+  outline-offset: 4px;
+}
+
 .container {
   width: min(1120px, calc(100% - 40px));
   margin-inline: auto;
@@ -73,10 +85,14 @@ a {
   padding: 18px clamp(18px, 5vw, 64px);
   background: rgba(7, 7, 6, 0.9);
   border-bottom: 1px solid var(--line);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(12px);
+  transition: background 180ms ease, box-shadow 180ms ease;
 }
 
 .site-header.is-scrolled {
   background: rgba(7, 7, 6, 0.97);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.42);
 }
 
 .brand {
@@ -275,6 +291,7 @@ h1 {
 .btn,
 .source-links a,
 .album-row a {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -287,20 +304,28 @@ h1 {
   letter-spacing: 0.06em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 160ms ease, background 160ms ease;
+  box-shadow: 5px 5px 0 rgba(184, 74, 47, 0.42);
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
 
 .btn:hover,
 .source-links a:hover,
 .album-row a:hover {
-  transform: translateY(-2px);
+  transform: translate(2px, 2px);
+  color: var(--ink);
   background: var(--paper);
+  box-shadow: 2px 2px 0 rgba(184, 74, 47, 0.55);
 }
 
 .btn-ghost {
   color: var(--paper);
   background: rgba(255,255,255,0.06);
   border-color: var(--line);
+  box-shadow: 5px 5px 0 rgba(214, 167, 47, 0.24);
+}
+
+.btn-ghost:hover {
+  color: var(--ink);
 }
 
 .section {
@@ -447,12 +472,15 @@ h1 {
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   text-decoration: none;
-  transition: transform 180ms ease, border-color 180ms ease;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .spotify-card:hover {
   transform: translateY(-6px);
   border-color: rgba(231, 223, 207, 0.45);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.095), rgba(255,255,255,.035)),
+    var(--panel);
 }
 
 .spotify-card img {
@@ -537,6 +565,7 @@ blockquote {
   padding: 26px;
   background: rgba(255,255,255,.055);
   border: 1px solid var(--line);
+  box-shadow: 10px 10px 0 rgba(184, 74, 47, 0.16);
 }
 
 .timeline-item div::before {
@@ -610,6 +639,11 @@ blockquote {
   background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.concert-year:hover {
+  border-color: rgba(231, 223, 207, 0.3);
 }
 
 .concert-year summary {
@@ -667,11 +701,29 @@ blockquote {
 }
 
 .concert-year li {
+  position: relative;
   display: grid;
   grid-template-columns: 110px 1fr;
   gap: 22px;
   padding: 18px 0;
   border-top: 1px solid var(--line);
+  transition: background 160ms ease, padding-inline 160ms ease, margin-inline 160ms ease;
+}
+
+.concert-year li:hover {
+  margin-inline: -12px;
+  padding-inline: 12px;
+  background: rgba(255,255,255,0.035);
+}
+
+.concert-year li.has-media::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: -14px;
+  width: 3px;
+  background: linear-gradient(var(--yellow), var(--rust));
 }
 
 .concert-year time {
@@ -695,6 +747,7 @@ blockquote {
 }
 
 .concert-media-actions button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -703,6 +756,7 @@ blockquote {
   color: var(--paper);
   background: rgba(184, 74, 47, 0.22);
   border: 1px solid rgba(214, 167, 47, 0.42);
+  border-radius: 0;
   font-size: 0.72rem;
   font-weight: 900;
   letter-spacing: 0.1em;
@@ -717,7 +771,7 @@ blockquote {
 }
 
 .concert-media-actions button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   background: rgba(184, 74, 47, 0.38);
   border-color: var(--yellow);
 }
@@ -748,6 +802,16 @@ blockquote {
     #11100e;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+}
+
+.concert-modal-panel::before {
+  content: "";
+  position: sticky;
+  top: -42px;
+  display: block;
+  height: 4px;
+  margin: calc(clamp(22px, 4vw, 42px) * -1) calc(clamp(22px, 4vw, 42px) * -1) clamp(18px, 3vw, 28px);
+  background: linear-gradient(90deg, var(--rust), var(--yellow));
 }
 
 .concert-modal-panel h2 {
@@ -786,6 +850,7 @@ blockquote {
   background: #050505;
   border: 1px solid var(--line);
   padding: 0;
+  transition: border-color 160ms ease, transform 160ms ease;
 }
 
 .concert-photo-thumb img {
@@ -797,6 +862,11 @@ blockquote {
 
 .concert-photo-thumb:hover img {
   transform: scale(1.04);
+}
+
+.concert-photo-thumb:hover {
+  transform: translateY(-2px);
+  border-color: rgba(214, 167, 47, 0.7);
 }
 
 .concert-photo-viewer {
@@ -1004,6 +1074,12 @@ blockquote {
   background: #c8102e;
   border: 1px solid rgba(255,255,255,.24);
   box-shadow: 0 18px 44px rgba(0,0,0,.48);
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.youtube-lite:hover .youtube-lite-play {
+  transform: translate(-50%, -50%) scale(1.06);
+  background: #e51d3e;
 }
 
 .youtube-lite-play::before {
@@ -1213,6 +1289,10 @@ blockquote {
   width: 21px;
   height: 21px;
   fill: currentColor;
+}
+
+.social-facebook:hover {
+  color: #1877f2;
 }
 
 .social-youtube:hover {
