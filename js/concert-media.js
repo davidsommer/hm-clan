@@ -40,5 +40,12 @@ window.hmConcertMediaIndex = [
     "events": 3,
     "photos": 50,
     "videos": 0
+  },
+  {
+    "year": "2004",
+    "src": "../js/concert-media/2004.js",
+    "events": 20,
+    "photos": 175,
+    "videos": 3
   }
 ];
