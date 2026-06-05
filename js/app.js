@@ -176,14 +176,31 @@ if (lightbox) {
   });
 }
 
-const concertMedia = window.hmConcertMedia || [];
-if (concertMedia.length) {
+document.querySelectorAll('.youtube-lite').forEach((button) => {
+  button.addEventListener('click', () => {
+    const videoId = button.dataset.youtubeId;
+    const title = button.dataset.title || 'YouTube Video';
+    if (!videoId) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+    iframe.title = title;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    button.replaceWith(iframe);
+  });
+});
+
+const concertMediaIndex = window.hmConcertMediaIndex || [];
+const initialConcertMedia = window.hmConcertMedia || [];
+if (concertMediaIndex.length || initialConcertMedia.length) {
   const modal = document.createElement('div');
   modal.className = 'concert-modal';
   modal.setAttribute('aria-hidden', 'true');
   modal.innerHTML = `
     <div class="concert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="concertModalTitle">
-      <button class="concert-modal-close" type="button" aria-label="Modal schliessen">×</button>
+      <button class="concert-modal-close" type="button" aria-label="Modal schliessen">&times;</button>
       <p class="kicker" id="concertModalKicker"></p>
       <h2 id="concertModalTitle"></h2>
       <div class="concert-modal-body"></div>
@@ -209,12 +226,12 @@ if (concertMedia.length) {
     const bodyEl = modal.querySelector('.concert-modal-body');
     bodyEl.innerHTML = `
       <div class="concert-photo-viewer">
-        <button class="photo-nav photo-prev" type="button" aria-label="Vorheriges Foto">‹</button>
+        <button class="photo-nav photo-prev" type="button" aria-label="Vorheriges Foto">&lsaquo;</button>
         <figure>
           <img src="${photo.src}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}">
           <figcaption>${activePhotoIndex + 1} / ${activePhotos.length}</figcaption>
         </figure>
-        <button class="photo-nav photo-next" type="button" aria-label="Nächstes Foto">›</button>
+        <button class="photo-nav photo-next" type="button" aria-label="Naechstes Foto">&rsaquo;</button>
       </div>
     `;
     modal.classList.add('is-photo-view');
@@ -253,7 +270,7 @@ if (concertMedia.length) {
       bodyEl.innerHTML = `
         <div class="concert-video-list">
           ${eventData.videos.map((video) => video.type === 'youtube' ? `
-            <iframe src="${video.src}" title="${video.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="${video.src}" title="${video.title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           ` : `
             <video controls preload="metadata">
               <source src="${video.src}" type="video/mp4">
@@ -269,17 +286,15 @@ if (concertMedia.length) {
     body.style.overflow = 'hidden';
   };
 
-  const byDate = new Map(concertMedia.map((eventData) => [eventData.date, eventData]));
-  document.querySelectorAll('.concert-year li').forEach((item) => {
-    const date = item.querySelector('time')?.textContent.trim();
-    const eventData = byDate.get(date);
-    if (!eventData) return;
+  const addMediaActions = (item, eventData) => {
+    if (item.querySelector('[data-concert-media-actions]')) return;
 
     const target = item.querySelector('div');
     if (!target) return;
 
     const actions = document.createElement('div');
     actions.className = 'concert-media-actions';
+    actions.dataset.concertMediaActions = 'true';
 
     if (eventData.photos.length) {
       const photosButton = document.createElement('button');
@@ -298,6 +313,57 @@ if (concertMedia.length) {
     }
 
     if (actions.children.length) target.appendChild(actions);
+  };
+
+  const attachYearMedia = (events) => {
+    const byDate = new Map(events.map((eventData) => [eventData.date, eventData]));
+    document.querySelectorAll('.concert-year li').forEach((item) => {
+      const date = item.querySelector('time')?.textContent.trim();
+      const eventData = byDate.get(date);
+      if (eventData) addMediaActions(item, eventData);
+    });
+  };
+
+  const loadedYears = new Set();
+  const loadingYears = new Map();
+  const yearSources = new Map(concertMediaIndex.map((entry) => [entry.year, entry.src]));
+
+  const loadYearMedia = (year) => {
+    if (!year || loadedYears.has(year)) return Promise.resolve();
+    if (loadingYears.has(year)) return loadingYears.get(year);
+
+    const src = yearSources.get(year);
+    if (!src) {
+      loadedYears.add(year);
+      return Promise.resolve();
+    }
+
+    const promise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.defer = true;
+      script.onload = () => {
+        const events = window.hmConcertMediaYears?.[year] || [];
+        attachYearMedia(events);
+        loadedYears.add(year);
+        resolve();
+      };
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+
+    loadingYears.set(year, promise);
+    return promise;
+  };
+
+  if (initialConcertMedia.length) attachYearMedia(initialConcertMedia);
+
+  document.querySelectorAll('.concert-year').forEach((details) => {
+    const year = details.querySelector('summary span')?.textContent.trim();
+    if (details.open) loadYearMedia(year);
+    details.addEventListener('toggle', () => {
+      if (details.open) loadYearMedia(year);
+    });
   });
 
   modal.querySelector('.concert-modal-close')?.addEventListener('click', closeModal);
@@ -311,3 +377,4 @@ if (concertMedia.length) {
     if (modal.classList.contains('is-photo-view') && event.key === 'ArrowRight') showPhoto(activePhotoIndex + 1);
   });
 }
+
