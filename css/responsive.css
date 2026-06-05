@@ -121,6 +121,32 @@
     min-height: auto;
   }
 
+  .concert-modal {
+    padding: 12px;
+  }
+
+  .concert-photo-viewer {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-nav {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 44px;
+    height: 58px;
+    transform: translateY(-50%);
+    background: rgba(5, 5, 5, 0.62);
+  }
+
+  .photo-prev {
+    left: 8px;
+  }
+
+  .photo-next {
+    right: 8px;
+  }
+
   .footer-grid {
     align-items: flex-start;
     flex-direction: column;

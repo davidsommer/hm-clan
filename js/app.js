@@ -173,3 +173,137 @@ if (lightbox) {
     if (event.key === 'Escape') closeLightbox();
   });
 }
+
+const concertMedia = window.hmConcertMedia || [];
+if (concertMedia.length) {
+  const modal = document.createElement('div');
+  modal.className = 'concert-modal';
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = `
+    <div class="concert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="concertModalTitle">
+      <button class="concert-modal-close" type="button" aria-label="Modal schliessen">×</button>
+      <p class="kicker" id="concertModalKicker"></p>
+      <h2 id="concertModalTitle"></h2>
+      <div class="concert-modal-body"></div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const closeModal = () => {
+    modal.classList.remove('is-open');
+    modal.classList.remove('is-photo-view');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.querySelector('.concert-modal-body').innerHTML = '';
+    body.style.overflow = '';
+  };
+
+  let activePhotos = [];
+  let activePhotoIndex = 0;
+
+  const showPhoto = (index) => {
+    if (!activePhotos.length) return;
+    activePhotoIndex = (index + activePhotos.length) % activePhotos.length;
+    const photo = activePhotos[activePhotoIndex];
+    const bodyEl = modal.querySelector('.concert-modal-body');
+    bodyEl.innerHTML = `
+      <div class="concert-photo-viewer">
+        <button class="photo-nav photo-prev" type="button" aria-label="Vorheriges Foto">‹</button>
+        <figure>
+          <img src="${photo.src}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}">
+          <figcaption>${activePhotoIndex + 1} / ${activePhotos.length}</figcaption>
+        </figure>
+        <button class="photo-nav photo-next" type="button" aria-label="Nächstes Foto">›</button>
+      </div>
+    `;
+    modal.classList.add('is-photo-view');
+    bodyEl.querySelector('.photo-prev')?.addEventListener('click', () => showPhoto(activePhotoIndex - 1));
+    bodyEl.querySelector('.photo-next')?.addEventListener('click', () => showPhoto(activePhotoIndex + 1));
+  };
+
+  const showPhotoGrid = (eventData) => {
+    activePhotos = eventData.photos;
+    modal.classList.remove('is-photo-view');
+    const bodyEl = modal.querySelector('.concert-modal-body');
+    bodyEl.innerHTML = `
+      <div class="concert-photo-grid">
+        ${eventData.photos.map((photo, index) => `
+          <button class="concert-photo-thumb" type="button" data-photo-index="${index}">
+            <img src="${photo.src}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async">
+          </button>
+        `).join('')}
+      </div>
+    `;
+    bodyEl.querySelectorAll('[data-photo-index]').forEach((button) => {
+      button.addEventListener('click', () => showPhoto(Number(button.dataset.photoIndex)));
+    });
+  };
+
+  const openConcertModal = (eventData, type) => {
+    const bodyEl = modal.querySelector('.concert-modal-body');
+    modal.querySelector('#concertModalKicker').textContent = type === 'photos' ? 'Fotos' : 'Videos';
+    modal.querySelector('#concertModalTitle').textContent = eventData.title;
+
+    if (type === 'photos') {
+      showPhotoGrid(eventData);
+    } else {
+      activePhotos = [];
+      modal.classList.remove('is-photo-view');
+      bodyEl.innerHTML = `
+        <div class="concert-video-list">
+          ${eventData.videos.map((video) => `
+            <video controls preload="metadata">
+              <source src="${video.src}" type="video/mp4">
+              ${video.title}
+            </video>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    body.style.overflow = 'hidden';
+  };
+
+  const byDate = new Map(concertMedia.map((eventData) => [eventData.date, eventData]));
+  document.querySelectorAll('.concert-year li').forEach((item) => {
+    const date = item.querySelector('time')?.textContent.trim();
+    const eventData = byDate.get(date);
+    if (!eventData) return;
+
+    const target = item.querySelector('div');
+    if (!target) return;
+
+    const actions = document.createElement('div');
+    actions.className = 'concert-media-actions';
+
+    if (eventData.photos.length) {
+      const photosButton = document.createElement('button');
+      photosButton.type = 'button';
+      photosButton.textContent = `Fotos (${eventData.photos.length})`;
+      photosButton.addEventListener('click', () => openConcertModal(eventData, 'photos'));
+      actions.appendChild(photosButton);
+    }
+
+    if (eventData.videos.length) {
+      const videosButton = document.createElement('button');
+      videosButton.type = 'button';
+      videosButton.textContent = `Videos (${eventData.videos.length})`;
+      videosButton.addEventListener('click', () => openConcertModal(eventData, 'videos'));
+      actions.appendChild(videosButton);
+    }
+
+    if (actions.children.length) target.appendChild(actions);
+  });
+
+  modal.querySelector('.concert-modal-close')?.addEventListener('click', closeModal);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) closeModal();
+  });
+  window.addEventListener('keydown', (event) => {
+    if (!modal.classList.contains('is-open')) return;
+    if (event.key === 'Escape') closeModal();
+    if (modal.classList.contains('is-photo-view') && event.key === 'ArrowLeft') showPhoto(activePhotoIndex - 1);
+    if (modal.classList.contains('is-photo-view') && event.key === 'ArrowRight') showPhoto(activePhotoIndex + 1);
+  });
+}
