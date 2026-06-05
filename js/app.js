@@ -28,6 +28,7 @@ const renderHeader = () => {
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
       <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
         ${siteNav.map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}
+        <button class="nav-contact" type="button" data-contact-open>Kontakt</button>
       </nav>
     </header>
   `;
@@ -42,6 +43,7 @@ const renderFooter = () => {
       <div class="container footer-grid">
         <a class="footer-logo" href="${home}" aria-label="hm-clan Home"><img src="${root}img/hm-logo-transparent.png" alt="hm-clan Logo" width="800" height="368" loading="lazy" decoding="async"></a>
         <nav aria-label="Footer Navigation">${siteNav.filter(([label]) => label !== 'Home').map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}</nav>
+        <button class="footer-contact" type="button" data-contact-open>Kontakt</button>
         <div class="footer-socials" aria-label="Social Links">
           <a class="social-link social-facebook" href="https://www.facebook.com/hmclan" target="_blank" rel="noopener" aria-label="hm-clan auf Facebook">${icons.facebook}</a>
           <a class="social-link social-youtube" href="https://www.youtube.com/@hmclan" target="_blank" rel="noopener" aria-label="hm-clan auf YouTube">${icons.youtube}</a>
@@ -59,6 +61,108 @@ const body = document.body;
 const header = document.querySelector('.site-header');
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
+
+const renderContactModal = () => {
+  const modal = document.createElement('div');
+  modal.className = 'contact-modal';
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = `
+    <div class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+      <button class="contact-close" type="button" aria-label="Kontakt schliessen">&times;</button>
+      <p class="kicker">Kontakt</p>
+      <h2 id="contactTitle">Schreib hm-clan</h2>
+      <form class="contact-form" novalidate>
+        <div class="contact-field">
+          <label for="contactName">Name</label>
+          <input id="contactName" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="contact-field">
+          <label for="contactEmail">E-Mail</label>
+          <input id="contactEmail" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="contact-field">
+          <label for="contactMessage">Nachricht</label>
+          <textarea id="contactMessage" name="message" rows="6" required></textarea>
+        </div>
+        <div class="contact-trap" aria-hidden="true">
+          <label for="contactWebsite">Website</label>
+          <input id="contactWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="contact-note">Das Formular öffnet dein E-Mail-Programm. Die Adresse wird erst beim Absenden zusammengesetzt.</p>
+        <p class="contact-error" aria-live="polite"></p>
+        <button class="btn" type="submit">Nachricht vorbereiten</button>
+      </form>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const form = modal.querySelector('.contact-form');
+  const error = modal.querySelector('.contact-error');
+  const openedAt = { value: 0 };
+
+  const openContact = () => {
+    body.classList.remove('nav-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    body.style.overflow = 'hidden';
+    openedAt.value = Date.now();
+    error.textContent = '';
+    setTimeout(() => modal.querySelector('#contactName')?.focus(), 40);
+  };
+
+  const closeContact = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    body.style.overflow = '';
+  };
+
+  document.querySelectorAll('[data-contact-open]').forEach((button) => {
+    button.addEventListener('click', openContact);
+  });
+
+  modal.querySelector('.contact-close')?.addEventListener('click', closeContact);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) closeContact();
+  });
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    error.textContent = '';
+
+    const formData = new FormData(form);
+    const name = String(formData.get('name') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+    const trap = String(formData.get('website') || '').trim();
+
+    if (trap) return;
+    if (Date.now() - openedAt.value < 1200) return;
+    if (!name || !email || !message || !form.checkValidity()) {
+      error.textContent = 'Bitte Name, E-Mail und Nachricht ausfüllen.';
+      return;
+    }
+
+    const recipient = ['info', 'hm-clan', 'ch'];
+    const to = `${recipient[0]}@${recipient[1]}.${recipient[2]}`;
+    const subject = `Kontakt über hm-clan.ch von ${name}`;
+    const bodyText = [
+      `Name: ${name}`,
+      `E-Mail: ${email}`,
+      '',
+      message,
+    ].join('\n');
+
+    window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+    closeContact();
+  });
+
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) closeContact();
+  });
+};
+
+renderContactModal();
 
 if (navToggle && mainNav) {
   navToggle.addEventListener('click', () => {

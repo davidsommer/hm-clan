@@ -142,9 +142,14 @@ summary:focus-visible {
   gap: clamp(14px, 2vw, 28px);
 }
 
-.main-nav a {
+.main-nav a,
+.nav-contact {
   position: relative;
   color: var(--paper);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -152,7 +157,8 @@ summary:focus-visible {
   text-transform: uppercase;
 }
 
-.main-nav a::after {
+.main-nav a::after,
+.nav-contact::after {
   content: "";
   position: absolute;
   right: 0;
@@ -166,7 +172,8 @@ summary:focus-visible {
 }
 
 .main-nav a:hover::after,
-.main-nav a.is-active::after {
+.main-nav a.is-active::after,
+.nav-contact:hover::after {
   transform: scaleX(1);
 }
 
@@ -1174,6 +1181,124 @@ blockquote {
   cursor: pointer;
 }
 
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 320;
+  display: none;
+  place-items: center;
+  padding: 22px;
+  background: rgba(5, 5, 5, 0.86);
+  backdrop-filter: blur(10px);
+}
+
+.contact-modal.is-open {
+  display: grid;
+}
+
+.contact-panel {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: min(820px, calc(100vh - 44px));
+  overflow: auto;
+  padding: clamp(24px, 5vw, 44px);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 18px),
+    #11100e;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.contact-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--rust), var(--yellow));
+}
+
+.contact-panel h2 {
+  margin: 8px 44px 24px 0;
+  font-family: "Anton", Impact, sans-serif;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  font-weight: 400;
+  line-height: .95;
+  text-transform: uppercase;
+}
+
+.contact-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  color: var(--paper);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--line);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field label {
+  color: var(--yellow);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  color: var(--paper);
+  background: rgba(255,255,255,.055);
+  border: 1px solid var(--line);
+  padding: 13px 14px;
+  font: inherit;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: 3px solid rgba(214, 167, 47, 0.35);
+  border-color: var(--yellow);
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-note,
+.contact-error {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.contact-error {
+  min-height: 1.4em;
+  color: #f1a18d;
+  font-weight: 800;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr minmax(260px, 360px);
@@ -1260,6 +1385,22 @@ blockquote {
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.footer-contact {
+  cursor: pointer;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: .8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.footer-contact:hover {
+  color: var(--yellow);
 }
 
 .footer-socials {

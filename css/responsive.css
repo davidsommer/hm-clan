@@ -25,10 +25,12 @@
     transform: translateY(0);
     transition-delay: 0s;
   }
-  .main-nav a {
+  .main-nav a,
+  .nav-contact {
     padding: 16px 4px;
     border-bottom: 1px solid var(--line);
     font-size: 1rem;
+    text-align: left;
   }
 
   .intro-grid,
