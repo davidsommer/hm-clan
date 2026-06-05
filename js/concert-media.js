@@ -11,7 +11,7 @@ window.hmConcertMediaIndex = [
     "src": "../js/concert-media/2009.js",
     "events": 7,
     "photos": 113,
-    "videos": 1
+    "videos": 0
   },
   {
     "year": "2008",
@@ -26,5 +26,19 @@ window.hmConcertMediaIndex = [
     "events": 6,
     "photos": 81,
     "videos": 18
+  },
+  {
+    "year": "2006",
+    "src": "../js/concert-media/2006.js",
+    "events": 5,
+    "photos": 58,
+    "videos": 1
+  },
+  {
+    "year": "2005",
+    "src": "../js/concert-media/2005.js",
+    "events": 3,
+    "photos": 50,
+    "videos": 0
   }
 ];

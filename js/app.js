@@ -269,13 +269,8 @@ if (concertMediaIndex.length || initialConcertMedia.length) {
       modal.classList.remove('is-photo-view');
       bodyEl.innerHTML = `
         <div class="concert-video-list">
-          ${eventData.videos.map((video) => video.type === 'youtube' ? `
+          ${eventData.videos.map((video) => `
             <iframe src="${video.src}" title="${video.title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          ` : `
-            <video controls preload="metadata">
-              <source src="${video.src}" type="video/mp4">
-              ${video.title}
-            </video>
           `).join('')}
         </div>
       `;

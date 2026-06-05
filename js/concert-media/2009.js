@@ -608,12 +608,7 @@ window.hmConcertMediaYears["2009"] = [
         "height": 532
       }
     ],
-    "videos": [
-      {
-        "src": "../img/2009-egw-aula-kleindietwil-joni-tanzcrew/09_egw_kleindietwil__64__926.mp4",
-        "title": "EGW Aula Kleindietwil (Joni, Tanzcrew) Video 1"
-      }
-    ]
+    "videos": []
   },
   {
     "date": "05.04.09",
