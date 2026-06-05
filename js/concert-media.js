@@ -47,5 +47,33 @@ window.hmConcertMediaIndex = [
     "events": 20,
     "photos": 175,
     "videos": 3
+  },
+  {
+    "year": "2003",
+    "src": "../js/concert-media/2003.js",
+    "events": 7,
+    "photos": 98,
+    "videos": 1
+  },
+  {
+    "year": "2002",
+    "src": "../js/concert-media/2002.js",
+    "events": 4,
+    "photos": 43,
+    "videos": 1
+  },
+  {
+    "year": "2001",
+    "src": "../js/concert-media/2001.js",
+    "events": 2,
+    "photos": 28,
+    "videos": 3
+  },
+  {
+    "year": "2000",
+    "src": "../js/concert-media/2000.js",
+    "events": 1,
+    "photos": 2,
+    "videos": 0
   }
 ];
