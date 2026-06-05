@@ -12,6 +12,8 @@ const icons = {
   facebook: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 21v-7h2.35l.45-3h-2.8V9.05c0-.82.4-1.62 1.7-1.62h1.43V4.88S15.34 4.66 14.1 4.66c-2.58 0-4.27 1.56-4.27 4.39V11H7.2v3h2.63v7h3.67Z"/></svg>',
   youtube: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.6 7.2s-.2-1.45-.82-2.08c-.78-.82-1.65-.82-2.05-.87C15.86 4.04 12 4.04 12 4.04h-.01s-3.86 0-6.73.21c-.4.05-1.27.05-2.05.87-.62.63-.82 2.08-.82 2.08S2.18 8.9 2.18 10.7v1.68c0 1.8.21 3.5.21 3.5s.2 1.45.82 2.08c.78.82 1.8.79 2.25.88 1.63.16 6.54.21 6.54.21s3.87-.01 6.74-.22c.4-.05 1.27-.05 2.05-.87.62-.63.82-2.08.82-2.08s.21-1.8.21-3.5V10.7c0-1.8-.21-3.5-.21-3.5ZM9.95 14.17V8.9l5.02 2.64-5.02 2.63Z"/></svg>',
   spotify: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.58 14.42a.75.75 0 0 1-1.03.25c-2.82-1.72-6.36-2.11-10.54-1.16a.75.75 0 0 1-.33-1.46c4.58-1.04 8.51-.59 11.65 1.33.35.22.46.68.25 1.04Zm1.3-2.9a.9.9 0 0 1-1.24.3c-3.23-1.98-8.15-2.56-11.97-1.4a.9.9 0 1 1-.52-1.72c4.34-1.32 9.74-.67 12.94 1.58.42.26.55.82.29 1.24Zm.11-3.02C14.12 8.2 7.73 7.98 4.9 8.62a1.05 1.05 0 1 1-.46-2.05c3.25-.73 10.25-.47 14.61 2.12a1.05 1.05 0 0 1-1.07 1.81Z"/></svg>',
+  photo: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-13C4.67 20 4 19.33 4 18.5v-13Zm2 1V15l3.3-3.3a1 1 0 0 1 1.4 0l2.05 2.05 1.35-1.35a1 1 0 0 1 1.4 0L18 14.9V6.5H6Zm11.8 11-3.2-3.2-1.35 1.35a1 1 0 0 1-1.4 0L10 13.8l-3.7 3.7h11.5ZM8.9 9.2a1.4 1.4 0 1 1 2.8 0 1.4 1.4 0 0 1-2.8 0Z"/></svg>',
+  video: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 5h9A2.5 2.5 0 0 1 17 7.5v.95l2.65-1.72A.9.9 0 0 1 21 7.48v9.04a.9.9 0 0 1-1.35.75L17 15.55v.95a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 3 16.5v-9A2.5 2.5 0 0 1 5.5 5Zm0 2A.5.5 0 0 0 5 7.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-9Z"/></svg>',
 };
 
 const renderHeader = () => {
@@ -250,7 +252,9 @@ if (concertMedia.length) {
       modal.classList.remove('is-photo-view');
       bodyEl.innerHTML = `
         <div class="concert-video-list">
-          ${eventData.videos.map((video) => `
+          ${eventData.videos.map((video) => video.type === 'youtube' ? `
+            <iframe src="${video.src}" title="${video.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          ` : `
             <video controls preload="metadata">
               <source src="${video.src}" type="video/mp4">
               ${video.title}
@@ -280,7 +284,7 @@ if (concertMedia.length) {
     if (eventData.photos.length) {
       const photosButton = document.createElement('button');
       photosButton.type = 'button';
-      photosButton.textContent = `Fotos (${eventData.photos.length})`;
+      photosButton.innerHTML = `${icons.photo}<span>Fotos (${eventData.photos.length})</span>`;
       photosButton.addEventListener('click', () => openConcertModal(eventData, 'photos'));
       actions.appendChild(photosButton);
     }
@@ -288,7 +292,7 @@ if (concertMedia.length) {
     if (eventData.videos.length) {
       const videosButton = document.createElement('button');
       videosButton.type = 'button';
-      videosButton.textContent = `Videos (${eventData.videos.length})`;
+      videosButton.innerHTML = `${icons.video}<span>Videos (${eventData.videos.length})</span>`;
       videosButton.addEventListener('click', () => openConcertModal(eventData, 'videos'));
       actions.appendChild(videosButton);
     }

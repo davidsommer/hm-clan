@@ -695,6 +695,9 @@ blockquote {
 }
 
 .concert-media-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
   padding: 8px 12px;
   color: var(--paper);
@@ -705,6 +708,12 @@ blockquote {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.concert-media-actions svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .concert-media-actions button:hover {
@@ -842,11 +851,17 @@ blockquote {
   gap: 18px;
 }
 
+.concert-video-list iframe,
 .concert-video-list video {
   width: 100%;
+  aspect-ratio: 16 / 9;
   max-height: 70vh;
   background: #050505;
   border: 1px solid var(--line);
+}
+
+.concert-video-list iframe {
+  min-height: 320px;
 }
 
 .source-links {
