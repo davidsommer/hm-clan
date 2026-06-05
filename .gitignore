@@ -8,3 +8,13 @@ dist
 # JetBrains IDE files
 .idea/
 *.iml
+
+# Local assistant/tool state
+.claude/
+
+# Deployment/build scratch files
+.deploy/
+.tmp/
+*.bak
+*.tmp
+*.log

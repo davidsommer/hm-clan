@@ -1,0 +1,33 @@
+# Internal project metadata
+.git/
+.github/
+.claude/
+.idea/
+.vscode/
+
+# Assistant/project context
+CLAUDE.md
+
+# Local IDE files
+*.iml
+
+# Development dependencies and caches
+node_modules/
+dist/
+.cache/
+.deploy/
+.tmp/
+
+# Helper scripts and scratch files
+*.py
+*.ps1
+*.sh
+*.bat
+*.cmd
+*.log
+*.tmp
+*.bak
+
+# Local-only files
+.DS_Store
+Thumbs.db

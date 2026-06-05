@@ -1,0 +1,17 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule (^|/)\.(git|claude|idea|vscode)(/|$) - [F,L]
+  RewriteRule (^|/)(CLAUDE\.md|.*\.(iml|py|ps1|sh|bat|cmd|log|tmp|bak))$ - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+</IfModule>
+
+<FilesMatch "^(\.git|\.claude|\.idea|\.vscode|\.deployignore|\.vercelignore|\.netlifyignore|CLAUDE\.md|.*\.(iml|py|ps1|sh|bat|cmd|log|tmp|bak))$">
+  Require all denied
+</FilesMatch>
