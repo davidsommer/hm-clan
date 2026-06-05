@@ -1327,6 +1327,37 @@ blockquote {
   list-style: none;
 }
 
+.legal-hero h1 {
+  font-size: clamp(3.6rem, 11vw, 8rem);
+}
+
+.legal-copy {
+  max-width: 840px;
+  padding: clamp(24px, 5vw, 44px);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.025)),
+    var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.legal-copy h2 {
+  margin: 28px 0 10px;
+  color: var(--yellow);
+  font-family: "Anton", Impact, sans-serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.legal-copy h2:first-child {
+  margin-top: 0;
+}
+
+.legal-copy p {
+  color: #cfc6b5;
+}
+
 .site-footer {
   padding: 42px 0;
   background: #050505;
@@ -1376,7 +1407,7 @@ blockquote {
 .footer-grid nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 12px;
 }
 
 .footer-grid a {
@@ -1387,20 +1418,15 @@ blockquote {
   text-transform: uppercase;
 }
 
-.footer-contact {
-  cursor: pointer;
-  color: var(--muted);
-  background: transparent;
-  border: 0;
-  font: inherit;
-  font-size: .8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  transition: color 160ms ease;
+.footer-legal {
+  margin-left: auto;
 }
 
-.footer-contact:hover {
-  color: var(--yellow);
+.footer-legal a {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  opacity: .72;
 }
 
 .footer-socials {
@@ -1417,6 +1443,7 @@ blockquote {
   color: var(--paper);
   background: rgba(255,255,255,.055);
   border: 1px solid var(--line);
+  cursor: pointer;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
@@ -1430,6 +1457,10 @@ blockquote {
   width: 21px;
   height: 21px;
   fill: currentColor;
+}
+
+.social-mail:hover {
+  color: var(--yellow);
 }
 
 .social-facebook:hover {
