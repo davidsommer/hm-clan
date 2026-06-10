@@ -232,12 +232,12 @@ window.hmConcertMediaYears["2006"] = [
   },
   {
     "date": "24.11.06",
-    "title": "hiphop Jam Graffitti Bern (chéjs)",
+    "title": "Hip-Hop-Jam Graffiti Bern (chéjs)",
     "slug": "2006-hiphop-jam-graffitti-bern-chejs",
     "photos": [
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-8.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 1",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 1",
         "width": 800,
         "height": 600,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-8.jpg",
@@ -246,7 +246,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-4.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 2",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 2",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-4.jpg",
@@ -255,7 +255,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-6.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 3",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 3",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-6.jpg",
@@ -264,7 +264,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-7.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 4",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 4",
         "width": 800,
         "height": 600,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-7.jpg",
@@ -273,7 +273,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-9.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 5",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 5",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-9.jpg",
@@ -282,7 +282,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-10.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 6",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 6",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-10.jpg",
@@ -291,7 +291,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-14.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 7",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 7",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-14.jpg",
@@ -300,7 +300,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-16.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 8",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 8",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-16.jpg",
@@ -309,7 +309,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-29.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 9",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 9",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-29.jpg",
@@ -318,7 +318,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-30.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 10",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 10",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-30.jpg",
@@ -327,7 +327,7 @@ window.hmConcertMediaYears["2006"] = [
       },
       {
         "src": "../img/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-33.jpg",
-        "alt": "hiphop Jam Graffitti Bern (chéjs) Foto 11",
+        "alt": "Hip-Hop-Jam Graffiti Bern (chéjs) Foto 11",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2006-hiphop-jam-graffitti-bern-chejs/06-hh-jam-vol-1-graffitti-33.jpg",

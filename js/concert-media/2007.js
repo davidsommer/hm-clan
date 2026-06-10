@@ -497,12 +497,12 @@ window.hmConcertMediaYears["2007"] = [
   },
   {
     "date": "31.08.07",
-    "title": "hh JAM Graffitti (dSmoke)",
+    "title": "Hip-Hop-Jam Graffiti (dSmoke)",
     "slug": "2007-hh-jam-graffitti-dsmoke",
     "photos": [
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-1_1.jpg",
-        "alt": "hh JAM Graffitti (dSmoke) Foto 1",
+        "alt": "Hip-Hop-Jam Graffiti (dSmoke) Foto 1",
         "width": 800,
         "height": 536,
         "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-1_1.jpg",
@@ -511,7 +511,7 @@ window.hmConcertMediaYears["2007"] = [
       },
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-2_1.jpg",
-        "alt": "hh JAM Graffitti (dSmoke) Foto 2",
+        "alt": "Hip-Hop-Jam Graffiti (dSmoke) Foto 2",
         "width": 800,
         "height": 536,
         "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-2_1.jpg",
@@ -520,7 +520,7 @@ window.hmConcertMediaYears["2007"] = [
       },
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-3_1.jpg",
-        "alt": "hh JAM Graffitti (dSmoke) Foto 3",
+        "alt": "Hip-Hop-Jam Graffiti (dSmoke) Foto 3",
         "width": 800,
         "height": 536,
         "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-3_1.jpg",
@@ -529,7 +529,7 @@ window.hmConcertMediaYears["2007"] = [
       },
       {
         "src": "../img/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-4_1.jpg",
-        "alt": "hh JAM Graffitti (dSmoke) Foto 4",
+        "alt": "Hip-Hop-Jam Graffiti (dSmoke) Foto 4",
         "width": 800,
         "height": 536,
         "thumb": "../img/thumbs/2007-hh-jam-graffitti-dsmoke/07-hh-jam-vol-2-graffitti-4_1.jpg",

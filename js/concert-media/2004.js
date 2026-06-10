@@ -252,12 +252,12 @@ window.hmConcertMediaYears["2004"] = [
   },
   {
     "date": "26.11.04",
-    "title": "Graffitti Bern (DJ Studi)",
+    "title": "Graffiti Bern (DJ Studi)",
     "slug": "2004-graffitti-bern-dj-studi",
     "photos": [
       {
         "src": "../img/2004-graffitti-bern-dj-studi/04-konzert-graffitti-9.jpg",
-        "alt": "Graffitti Bern (DJ Studi) Foto 1",
+        "alt": "Graffiti Bern (DJ Studi) Foto 1",
         "width": 800,
         "height": 600,
         "thumb": "../img/thumbs/2004-graffitti-bern-dj-studi/04-konzert-graffitti-9.jpg",
@@ -266,7 +266,7 @@ window.hmConcertMediaYears["2004"] = [
       },
       {
         "src": "../img/2004-graffitti-bern-dj-studi/04-konzert-graffitti-1.jpg",
-        "alt": "Graffitti Bern (DJ Studi) Foto 2",
+        "alt": "Graffiti Bern (DJ Studi) Foto 2",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2004-graffitti-bern-dj-studi/04-konzert-graffitti-1.jpg",
@@ -275,7 +275,7 @@ window.hmConcertMediaYears["2004"] = [
       },
       {
         "src": "../img/2004-graffitti-bern-dj-studi/04-konzert-graffitti-2.jpg",
-        "alt": "Graffitti Bern (DJ Studi) Foto 3",
+        "alt": "Graffiti Bern (DJ Studi) Foto 3",
         "width": 600,
         "height": 800,
         "thumb": "../img/thumbs/2004-graffitti-bern-dj-studi/04-konzert-graffitti-2.jpg",
@@ -284,7 +284,7 @@ window.hmConcertMediaYears["2004"] = [
       },
       {
         "src": "../img/2004-graffitti-bern-dj-studi/04-konzert-graffitti-11.jpg",
-        "alt": "Graffitti Bern (DJ Studi) Foto 4",
+        "alt": "Graffiti Bern (DJ Studi) Foto 4",
         "width": 800,
         "height": 600,
         "thumb": "../img/thumbs/2004-graffitti-bern-dj-studi/04-konzert-graffitti-11.jpg",

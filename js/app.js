@@ -342,7 +342,7 @@ if (concertMediaIndex.length || initialConcertMedia.length) {
           <img src="${photo.src}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}">
           <figcaption>${activePhotoIndex + 1} / ${activePhotos.length}</figcaption>
         </figure>
-        <button class="photo-nav photo-next" type="button" aria-label="Naechstes Foto">&rsaquo;</button>
+        <button class="photo-nav photo-next" type="button" aria-label="Nächstes Foto">&rsaquo;</button>
       </div>
     `;
     modal.classList.add('is-photo-view');
