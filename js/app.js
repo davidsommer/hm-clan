@@ -11,6 +11,7 @@ const siteNav = [
 const legalNav = [
   ['Datenschutz', root + 'datenschutz/'],
   ['Impressum', root + 'impressum/'],
+  ['Archiv', 'https://archiv.hm-clan.ch/'],
 ];
 
 const icons = {
