@@ -5,7 +5,7 @@
 
   .main-nav {
     position: fixed;
-    inset: 78px 0 auto 0;
+    inset: 92px 0 auto 0;
     display: grid;
     gap: 0;
     padding: 18px;
@@ -72,6 +72,10 @@
     padding: 14px;
   }
 
+  .main-nav {
+    inset: 76px 0 auto 0;
+  }
+
   .brand-name {
     font-size: 1.55rem;
   }
@@ -81,8 +85,9 @@
     letter-spacing: 0.2em;
   }
 
-  .footer-logo {
-    width: 118px;
+  .brand-logo {
+    width: 104px;
+    min-width: 104px;
   }
 
   .hero {
@@ -160,7 +165,7 @@
     flex-direction: column;
   }
 
-  .footer-logo {
+  .footer-legal {
     margin-left: 0;
   }
 }

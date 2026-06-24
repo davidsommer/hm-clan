@@ -29,8 +29,8 @@ const renderHeader = () => {
 
   mount.innerHTML = `
     <header class="site-header">
-      <a class="brand" href="${home}" aria-label="hm-clan Home">
-        <span class="brand-mark"><span class="brand-name">hm-clan</span><span class="brand-tag">history makers</span></span>
+      <a class="brand brand-logo" href="${home}" aria-label="hm-clan Home">
+        <img src="${root}img/hm-logo-transparent.png" alt="" width="800" height="368" decoding="async">
       </a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
       <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
@@ -44,11 +44,12 @@ const renderHeader = () => {
 const renderFooter = () => {
   const mount = document.querySelector('[data-site-footer]');
   if (!mount) return;
+  const year = new Date().getFullYear();
 
   mount.innerHTML = `
     <footer class="site-footer">
       <div class="container footer-grid">
-        <a class="footer-logo" href="${home}" aria-label="hm-clan Home"><img src="${root}img/hm-logo-transparent.png" alt="hm-clan Logo" width="800" height="368" loading="lazy" decoding="async"></a>
+        <p class="footer-copy">&copy; ${year} hm-clan. Alle Rechte vorbehalten.</p>
         <nav class="footer-legal" aria-label="Rechtliches">${legalNav.map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}</nav>
         <div class="footer-socials" aria-label="Social Links">
           <button class="social-link social-mail" type="button" data-contact-open aria-label="Kontaktformular öffnen">${icons.mail}</button>

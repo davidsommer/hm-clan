@@ -104,6 +104,24 @@ summary:focus-visible {
   white-space: nowrap;
 }
 
+.brand-logo {
+  width: clamp(108px, 11vw, 144px);
+  min-width: 108px;
+}
+
+.brand-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter:
+    sepia(0.88)
+    saturate(1.75)
+    hue-rotate(345deg)
+    brightness(0.92)
+    contrast(1.04)
+    drop-shadow(0 12px 24px rgba(0, 0, 0, 0.58));
+}
+
 .brand-mark {
   display: grid;
   gap: 2px;
@@ -209,10 +227,10 @@ summary:focus-visible {
 
 .hero {
   position: relative;
-  min-height: 86vh;
+  min-height: 90vh;
   display: grid;
   align-items: end;
-  padding: 150px 0 72px;
+  padding: 170px 0 72px;
   isolation: isolate;
   background-image: var(--hero-image);
   background-position: var(--hero-position, center center);
@@ -222,7 +240,7 @@ summary:focus-visible {
 }
 
 .page-hero {
-  min-height: 62vh;
+  min-height: 72vh;
 }
 
 .hero::before,
@@ -1371,37 +1389,12 @@ blockquote {
   gap: 22px;
 }
 
-.footer-logo {
-  display: inline-flex;
-  width: clamp(92px, 12vw, 150px);
-  margin-left: clamp(18px, 5vw, 64px);
-  opacity: 0.92;
-}
-
-.footer-logo img {
-  width: 100%;
-  height: auto;
-  filter:
-    sepia(0.85)
-    saturate(1.65)
-    hue-rotate(345deg)
-    brightness(0.9)
-    drop-shadow(0 10px 22px rgba(0, 0, 0, 0.52));
-}
-
-.footer-grid strong {
-  display: block;
-  font-family: "Anton", Impact, sans-serif;
-  font-size: 2rem;
-  letter-spacing: .06em;
-}
-
-.footer-grid span {
+.footer-copy {
+  margin: 0;
   color: var(--muted);
-  font-size: .78rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
 }
 
 .footer-grid nav {
