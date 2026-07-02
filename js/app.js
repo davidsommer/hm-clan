@@ -5,6 +5,7 @@ const siteNav = [
   ['Home', home],
   ['Geschichte', root + 'geschichte/'],
   ['Konzerte', root + 'konzerte/'],
+  ['Musik', root + 'musik/'],
   ['Videos', root + 'videos/'],
 ];
 
@@ -35,7 +36,7 @@ const renderHeader = () => {
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
       <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
         ${siteNav.map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}
-        <button class="nav-contact" type="button" data-contact-open>Kontakt</button>
+        <button class="nav-contact nav-contact-icon" type="button" data-contact-open aria-label="Kontaktformular öffnen">${icons.mail}</button>
       </nav>
     </header>
   `;
@@ -186,11 +187,11 @@ if (navToggle && mainNav) {
   });
 }
 
-const knownSlugs = ['geschichte', 'konzerte', 'videos'];
+const knownSlugs = ['geschichte', 'konzerte', 'musik', 'videos'];
 const lastSegment = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/+$/, '').split('/').pop();
 const currentSlug = knownSlugs.includes(lastSegment) ? lastSegment : '';
 document.querySelectorAll('.main-nav a').forEach((link) => {
-  const match = link.getAttribute('href').match(/(geschichte|konzerte|videos)\/?$/);
+  const match = link.getAttribute('href').match(/(geschichte|konzerte|musik|videos)\/?$/);
   const linkSlug = match ? match[1] : '';
   if (linkSlug === currentSlug) {
     link.classList.add('is-active');

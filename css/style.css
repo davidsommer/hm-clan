@@ -195,6 +195,35 @@ summary:focus-visible {
   transform: scaleX(1);
 }
 
+.nav-contact-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: var(--paper);
+  background: rgba(255,255,255,0.055);
+  border: 1px solid var(--line);
+  transition: transform 160ms ease, color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.nav-contact-icon::after {
+  display: none;
+}
+
+.nav-contact-icon:hover {
+  transform: translateY(-2px);
+  color: var(--yellow);
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(214, 167, 47, 0.58);
+}
+
+.nav-contact-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .nav-toggle {
   display: none;
   width: 46px;
@@ -540,6 +569,60 @@ h1 {
   font-family: "Anton", Impact, sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   text-transform: uppercase;
+}
+
+.music-players {
+  display: grid;
+  gap: 28px;
+}
+
+.music-player-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: clamp(18px, 4vw, 34px);
+  align-items: stretch;
+  padding: clamp(16px, 3vw, 24px);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.025)),
+    var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.music-player-cover img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.music-player-content {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.music-player-content h2 {
+  font-family: "Anton", Impact, sans-serif;
+  font-size: clamp(2.6rem, 6vw, 5.2rem);
+  font-weight: 400;
+  line-height: .95;
+  text-transform: uppercase;
+}
+
+.music-player-content p:not(.kicker) {
+  max-width: 740px;
+  color: #cfc6b5;
+}
+
+.spotify-embed {
+  width: 100%;
+  min-height: 352px;
+  overflow: hidden;
+  background: #050505;
+  border: 1px solid var(--line);
 }
 
 .quote-strip {
