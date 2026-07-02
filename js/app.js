@@ -151,7 +151,7 @@ const renderContactModal = () => {
       return;
     }
 
-    const recipient = ['info', 'hm-clan', 'ch'];
+    const recipient = ['kontakt', 'hm-clan', 'ch'];
     const to = `${recipient[0]}@${recipient[1]}.${recipient[2]}`;
     const subject = `Kontakt über hm-clan.ch von ${name}`;
     const bodyText = [

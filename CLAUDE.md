@@ -113,7 +113,7 @@ Important members/roles:
 - David Sommer, aka dave: rapper/lyrics, joined late 2003, returned in 2008 after a break
 - Joel Stauffer, aka J82: early MC
 - Christoph Hasenfratz: early guitarist, later homepage/web role
-- David Mörner, aka dj mate: early mixer, later DJ, then web/graphic design
+- David Mürner, aka dj mate: early mixer, later DJ, then web/graphic design
 - Therese Krähenbühl, aka tray-c: vocalist in 2003
 - David Schranz, aka radical-d: guest/additional stage member in autumn 2002
 - Timon Studler, aka dj studi: occasional live support
@@ -126,7 +126,7 @@ Timeline anchors:
 - Summer 2001: the crew prepared songs and recorded the first CD.
 - 15 September 2001: CD baptism/release event for "dr ander hiphop" at Reberhaus in Bolligen.
 - 2001: name shortened to "hm-clan".
-- Summer 2002: personnel restructuring; David Mörner moved away from DJing to web/graphic design; Joel Stauffer left the stage; gandi moved from mixer to stage.
+- Summer 2002: personnel restructuring; David Mürner moved away from DJing to web/graphic design; Joel Stauffer left the stage; gandi moved from mixer to stage.
 - 10 August 2002: Prix Walo "Sprungbrett" participation in Kreuzlingen.
 - 22 March 2003: tray-c performed with the crew at BäGO Fescht in National, Bern.
 - 2 August 2003: Freakstock open-air performance in Gotha, Germany.

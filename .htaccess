@@ -2,6 +2,10 @@ Options -Indexes
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
   RewriteRule (^|/)\.(git|claude|idea|vscode)(/|$) - [F,L]
   RewriteRule (^|/)(CLAUDE\.md|.*\.(iml|py|ps1|sh|bat|cmd|log|tmp|bak))$ - [F,L]
 </IfModule>
