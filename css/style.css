@@ -261,7 +261,7 @@ summary:focus-visible {
   align-items: end;
   padding: 170px 0 72px;
   isolation: isolate;
-  background-image: var(--hero-image);
+  background-image: var(--hero-image, none);
   background-position: var(--hero-position, center center);
   background-size: var(--hero-size, cover);
   background-repeat: no-repeat;

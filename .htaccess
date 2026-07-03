@@ -2,6 +2,9 @@ Options -Indexes
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^hm-clan\.ch$ [NC]
+  RewriteRule ^ https://www.hm-clan.ch%{REQUEST_URI} [R=301,L]
+
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
@@ -14,6 +17,26 @@ Options -Indexes
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+
+  <FilesMatch "\.(html?)$">
+    Header set Cache-Control "public, max-age=300"
+  </FilesMatch>
+
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  <FilesMatch "\.(ico|jpg|jpeg|png|gif|webp|svg|avif|pdf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml application/javascript application/json image/svg+xml
 </IfModule>
 
 <FilesMatch "^(\.git|\.claude|\.idea|\.vscode|\.deployignore|\.vercelignore|\.netlifyignore|CLAUDE\.md|.*\.(iml|py|ps1|sh|bat|cmd|log|tmp|bak))$">

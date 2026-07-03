@@ -22,11 +22,13 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="hm-clan">
+  <meta property="og:updated_time" content="2026-07-03T08:30:00+02:00">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@hmclan">
   <meta name="twitter:title" content="hm-clan – Berner Mundart-Hip-Hop (1999–2010)">
   <meta name="twitter:description" content="Drei Alben, zwei Videoclips und über 120 Konzerte: die Geschichte der Berner Mundart-Hip-Hop-Crew hm-clan.">
   <meta name="twitter:image" content="https://www.hm-clan.ch/img/hero-openair-zug.jpg">
+  <link rel="preload" as="image" href="img/hero-openair-zug.jpg" fetchpriority="high">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,9 +38,11 @@
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
+    "@id": "https://www.hm-clan.ch/#hm-clan",
     "name": "hm-clan",
     "alternateName": "History Makers",
     "genre": ["Hip-Hop", "Mundart-Rap"],
+    "inLanguage": "de-CH",
     "foundingDate": "1999",
     "dissolutionDate": "2010",
     "foundingLocation": "Bern, Schweiz",
@@ -53,7 +57,8 @@
       { "@type": "MusicAlbum", "name": "dr ander hiphop", "datePublished": "2001" },
       { "@type": "MusicAlbum", "name": "wortspiu", "datePublished": "2004" },
       { "@type": "MusicAlbum", "name": "[drü:eis]", "datePublished": "2007" }
-    ]
+    ],
+    "mainEntityOfPage": "https://www.hm-clan.ch/"
   }
   </script>
 </head>
@@ -61,7 +66,7 @@
   <div data-site-header></div>
 
   <main>
-    <section class="hero home-hero" style="--hero-image:url('../img/hero-openair-zug.jpg');--hero-position:center 34%;--hero-position-mobile:center 28%">
+    <section class="hero home-hero" style="background-image:url('img/hero-openair-zug.jpg');--hero-position:center 34%;--hero-position-mobile:center 28%">
       <div class="hero-inner reveal">
         <p class="kicker">HipHop vo Bärn · 1999-2010</p>
         <h1>hm-clan</h1>
@@ -123,7 +128,7 @@
     </section>
   </main>
   <div data-site-footer></div>
-  <script src="js/app.js"></script>
+  <script defer src="js/app.js"></script>
   <script defer src="https://cdn.counter.dev/script.js" data-id="b4f89e6e-64c8-42a6-9e8f-59a52ce8142a" data-utcoffset="1"></script>
 </body>
 </html>

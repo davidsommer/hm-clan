@@ -1,5 +1,4 @@
-﻿User-agent: *
-Disallow:
+User-agent: *
+Allow: /
 
 Sitemap: https://www.hm-clan.ch/sitemap.xml
-
